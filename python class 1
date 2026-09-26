@@ -1,0 +1,601 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOELUXntuXvotFR+iXGk2Yl",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/tahireman448/PYTHON-PROJECTS/blob/legends-never-die/python%20class%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "phython class 1\n"
+      ],
+      "metadata": {
+        "id": "HmRsVR8DPQr6"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "What We Will Learn Today\n",
+        "\n",
+        "Python Basics for DS & AI 2\n",
+        "Part 1\n",
+        "• Variables - storing data\n",
+        "• Data Types - int, float, str, bool, list, tuple, dict, set\n",
+        "• Operators - arithmetic, assignment, comparison, logical\n",
+        "Part 2\n",
+        "• Conditional Statements - if, elif, else\n",
+        "• How we work: theory in slides, code in Jupyter Notebook. Type every example yourself!"
+      ],
+      "metadata": {
+        "id": "ERHcHLbEPiep"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Variables\n",
+        "\n",
+        "Python Basics for DS & AI 4\n",
+        "• A variable is a name that stores a value.\n",
+        "• Use = to give (assign) a value.\n",
+        "• No need to write the type. Python finds it\n",
+        "automatically.\n",
+        "• The value can be changed any time.\n",
+        "• print() shows the value on screen.\n"
+      ],
+      "metadata": {
+        "id": "W-Z6bG0oPk-R"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"Ali\"\n",
+        "age = 25\n",
+        "height = 5.9\n",
+        "is_student = True\n",
+        "print(name)\n",
+        "print(age)\n",
+        "print(\"Name:\", name, \"| Age:\", age)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hgF_Rn1BPtpx",
+        "outputId": "33f74756-e459-4121-9fb0-ed8bf5e9f24c"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ali\n",
+            "25\n",
+            "Name: Ali | Age: 25\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Variable Naming Rules**\n",
+        "✋\n",
+        "Python Basics for DS & AI 5\n",
+        "\n",
+        "• Start with a letter or underscore ( _ )\n",
+        "\n",
+        "• Only letters, numbers and _ are allowed\n",
+        "\n",
+        "• No spaces. Use snake_case: total_marks\n",
+        "\n",
+        "• Case sensitive: age and Age are different\n",
+        "\n",
+        "• Cannot use keywords like if, for, class\n",
+        "\n",
+        "• Wrong names: 2name, my name\n"
+      ],
+      "metadata": {
+        "id": "AiItbe8jQDXb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "student_name = \"Sara\"\n",
+        "total_marks = 500\n",
+        "a, b, c = 1, 2, 3\n",
+        "x = y = 10\n",
+        "print(a, b, c, x, y)\n",
+        "Age = 20\n",
+        "age = 30\n",
+        "print(Age, age)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MAEVxRfFQQDr",
+        "outputId": "c73579d4-3daf-4c6d-8750-ebdf73baecbc"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 2 3 10 10\n",
+            "20 30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "HuJa3Y8RQV18"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Data Types**\n",
+        "✋\n",
+        "Python Basics for DS & AI\n",
+        "\n",
+        "\n",
+        "• int - whole numbers (10, -5)\n",
+        "\n",
+        "• float - decimal numbers (3.14)"
+      ],
+      "metadata": {
+        "id": "8gQv351BQZHh"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 10\n",
+        "b = 3.14\n",
+        "c = \"Hello\"\n",
+        "d = True\n",
+        "e = None\n",
+        "\n",
+        "print(type(a))\n",
+        "print(type(b))\n",
+        "print(type(c))\n",
+        "print(type(d))\n",
+        "print(type(e))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "P6IwG70kQkGb",
+        "outputId": "dedeb50f-aea2-4e44-8645-30f32fc3aac8"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "<class 'float'>\n",
+            "<class 'str'>\n",
+            "<class 'bool'>\n",
+            "<class 'NoneType'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Data Types: Strings**\n",
+        "✋\n",
+        "Python Basics for DS & AI 7\n",
+        "• Text written inside quotes: 'single' or \"double\".\n",
+        "\n",
+        "• + joins strings, * repeats them.\n",
+        "\n",
+        "• len() gives the number of characters.\n",
+        "\n",
+        "• Index starts from 0, so second[0] is the first\n",
+        "character.\n",
+        "\n",
+        "• Methods: upper(), lower(), strip()"
+      ],
+      "metadata": {
+        "id": "QL7b0iEpRD4G"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "first = \"Data\"\n",
+        "second = \"Science\"\n",
+        "\n",
+        "print(first + \" \" + second)\n",
+        "print(first * 3)\n",
+        "print(len(second))\n",
+        "print(second.upper())\n",
+        "print(second[0])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gS8CWhIyRWoV",
+        "outputId": "9568e0d0-b2e0-4bbb-96f2-37a13b8d3773"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Data Science\n",
+            "DataDataData\n",
+            "7\n",
+            "SCIENCE\n",
+            "S\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Data Types: list, tuple, dict, set**\n",
+        "✋\n",
+        "Python Basics for DS & AI 8\n",
+        "• list [ ] - ordered, can be changed\n",
+        "\n",
+        "• tuple ( ) - ordered, cannot be changed\n",
+        "\n",
+        "• dict { } - data in key : value pairs\n",
+        "\n",
+        "• set { } - only unique values\n",
+        "\n",
+        "• We use these a lot in Data Science. More\n",
+        "detail in later sessions."
+      ],
+      "metadata": {
+        "id": "k6rf69TtRlSt"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "marks = [80, 90, 75]\n",
+        "point = (10, 20)\n",
+        "student = {\"name\": \"Ali\", \"age\": 22}\n",
+        "unique = {1, 2, 2, 3}\n",
+        "print(marks[0])\n",
+        "print(student[\"name\"])\n",
+        "print(unique)\n",
+        "print(type(marks))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dl6p4IJ0RuaU",
+        "outputId": "b53eccc1-ad29-4561-cec9-e52ac832d184"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "80\n",
+            "Ali\n",
+            "{1, 2, 3}\n",
+            "<class 'list'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Slicing: Strings and Lists**\n",
+        "⏰\n",
+        "Python Basics for DS & AI 9\n",
+        "• Slicing takes out a part of a string or list:\n",
+        "name[start:stop]\n",
+        "\n",
+        "• start is included, stop is NOT included.\n",
+        "\n",
+        "• Leave start empty to begin from 0. Leave stop\n",
+        "empty to go to the end.\n",
+        "\n",
+        "• A negative index counts from the end: -1 is\n",
+        "the last item.\n",
+        "\n",
+        "• step can also be given:\n",
+        "name[start:stop:step]"
+      ],
+      "metadata": {
+        "id": "UrX1MP8xRzKD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "word = \"Programming\"\n",
+        "print(word[0:6])\n",
+        "print(word[:4])\n",
+        "print(word[-3:])\n",
+        "nums = [10, 20, 30, 40, 50]\n",
+        "print(nums[1:4])\n",
+        "print(nums[::2])\n",
+        "print(nums[::-1])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YCymLTvNR_2i",
+        "outputId": "7a2ee58e-e408-4d20-da87-48ef239dfbb3"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Progra\n",
+            "Prog\n",
+            "ing\n",
+            "[20, 30, 40]\n",
+            "[10, 30, 50]\n",
+            "[50, 40, 30, 20, 10]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Escape Sequences**\n",
+        "\n",
+        "Python Basics for DS & AI 10\n",
+        "• A backslash \\ plus a character is an escape\n",
+        "sequence.\n",
+        "\n",
+        "• It adds special characters inside a string, like\n",
+        "a new line, a tab or quotes.\n",
+        "\n",
+        "• Each one counts as 1 character.\n",
+        "\n",
+        "• r\"...\" is a raw string: backslash stays as\n",
+        "normal text.\n",
+        "\n",
+        "---\n",
+        "**Escape Meaning**\n",
+        "\n",
+        "\\n *New line*\n",
+        "\n",
+        "\\t *Tab (a gap)*\n",
+        "\n",
+        "\\\\ *Backslash*\n",
+        "\n",
+        "\\' *Single quote*\n",
+        "\n",
+        "\\\"* Double quote*\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "dxvffcnWSurY"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Hello\\nWorld\")\n",
+        "print(\"Name:\\tAli\")\n",
+        "print(\"She said \\\"Hi\\\"\")\n",
+        "print('It\\'s Python')\n",
+        "print(\"C:\\\\Users\\\\Ali\")\n",
+        "print(r\"C:\\new\\test\")\n",
+        "print(len(\"a\\nb\"))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tWTvSABFTfHw",
+        "outputId": "b3b75ae0-517e-4159-e3e7-d465cd2bd4b3"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello\n",
+            "World\n",
+            "Name:\tAli\n",
+            "She said \"Hi\"\n",
+            "It's Python\n",
+            "C:\\Users\\Ali\n",
+            "C:\\new\\test\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Type Conversion**\n",
+        "⏰\n",
+        "Python Basics for DS & AI 10\n",
+        "\n",
+        "• Change one type to another: int(),\n",
+        "float(), str(), bool()\n",
+        "\n",
+        "• input() always gives text (str). Convert it\n",
+        "before doing maths.\n",
+        "\n",
+        "• int(7.9) cuts the decimal part and gives 7.\n",
+        "\n",
+        "• bool(0) is False. Any other number is True.\n"
+      ],
+      "metadata": {
+        "id": "VPcrq9Y9Ts-O"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = \"100\"\n",
+        "y = int(x)\n",
+        "print(y + 50)\n",
+        "price = 99\n",
+        "print(float(price))\n",
+        "print(str(price) + \" rupees\")\n",
+        "print(int(7.9))\n",
+        "print(bool(0), bool(5))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-sv6fzd9T2Vm",
+        "outputId": "ac7f3915-2cc2-452a-8578-7ed212b24cd6"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "150\n",
+            "99.0\n",
+            "99 rupees\n",
+            "7\n",
+            "False True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Arithmetic** **Operators**\n",
+        "⏰\n",
+        "\n",
+        "Python provides seven arithmetic operators to perform standard mathematical calculations on numerical values.\n",
+        "\n",
+        "Python Arithmetic Operators  \n",
+        "\n",
+        "---\n",
+        "add +\n",
+        "\n",
+        "sub -\n",
+        "\n",
+        "multiply *\n",
+        "\n",
+        "divide /\n",
+        "\n",
+        "modulus%\n",
+        "\n",
+        "exponets **\n",
+        "\n",
+        "Floor Division //  (for not any point)\n",
+        "\n",
+        "  \n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "baLBY189T62u"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 10\n",
+        "b= 20\n",
+        "print(a+b)\n",
+        "print(a-b)\n",
+        "print(a*b)\n",
+        "print(a/b)\n",
+        "print(a**b)\n",
+        "print(a//b)\n",
+        "print(a%b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dWT-4-CoT5Zj",
+        "outputId": "547b5daa-2a8b-4047-c259-18d8efc3b3fc"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "30\n",
+            "-10\n",
+            "200\n",
+            "0.5\n",
+            "100000000000000000000\n",
+            "0\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "3Ge0pItMWXHs"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
